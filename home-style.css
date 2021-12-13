@@ -39,16 +39,16 @@ body {
 body p {
     font-family: Blippo, fantasy;
     letter-spacing: 1px;
-    font-size: 40px;
+    font-size: 60px;
     color: white;
     text-align: center;
     text-shadow: 5px 5px #bA0C2F;
 }
 
-#main {
-    padding-top: 300px;
-}
-
-#subtitle {
-    padding-bottom: 200px;
+#main-text {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -175px;
+    margin-left: -415px;
 }
