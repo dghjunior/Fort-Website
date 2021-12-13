@@ -1,4 +1,6 @@
 .navbar {
+    position: fixed;
+    width: 105%;
     background-color: #333;
     overflow-x: hidden;
     margin-top: -10px;
@@ -27,28 +29,51 @@
 
 body {
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
-.event {
-    order: 1;
-    flex-basis: auto;
-    flex-grow: 1;
+body::-webkit-scrollbar { width: 0 !important }
+
+.upcoming {
+    display: flex;
+    border: 1px solid black;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.left-column, .right-column {
+    flex: 50%;
+}
+
+.left-column, .right-column {
+    float: left;
+    width: 50%;
+}
+
+#coming-soon {
+    margin-top: 2px;
+    width: 100%;
+    max-height: 90%;
+    height: 81%;
+    object-fit: cover;
+}
+
+#header {
+    position: absolute;
+}
+
+body p {
+    font-family: Blippo, fantasy;
+    letter-spacing: 1px;
+    color: black;
     text-align: center;
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
-    max-width: 95%;
-    max-height: 222px;
-    height: 450px;
-    margin: 20px; 
-    box-shadow: 3px 2px lightgray;
 }
 
-.event:hover {
-    cursor: pointer;
-    box-shadow: 5px 3px gray;
+#main {
+    margin-top: 40%;
+    font-size: 60px;
 }
 
-#section-header {
-    text-decoration: underline;
+#subtitle {
+    font-size: 30px;
 }
