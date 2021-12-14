@@ -28,7 +28,7 @@
 /* Three columns side by side */
 .column {
     float: left;
-    width: 33.3%;
+    width: 19%;
     margin-bottom: 16px;
     padding: 0 8px;
   }
@@ -43,7 +43,13 @@
   
   /* Add some shadows to create a card effect */
   .card {
+    margin-top: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+
+  .card:hover {
+      box-shadow: 2px 2px 4px 2px black;
   }
   
   /* Some left and right padding inside the container */
@@ -76,4 +82,23 @@
   
   .button:hover {
     background-color: #555;
+  }
+
+  img {
+      position: relative;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1;
+      object-fit: cover;
+      border-radius: 5px 5px 0 0;
+  }
+
+  img:after {
+      content: "";
+      display: block;
+      padding-top: 100%;
+  }
+
+  body {
+      overflow-x: hidden;
   }
